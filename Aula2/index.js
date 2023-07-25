@@ -1,3 +1,4 @@
+
 var nome = "Mente maker";
 nome = "Junior";
 nome = 5.6;
@@ -50,15 +51,17 @@ let indefinido;
 console.log(indefinido)
 //console.log(typeof indefinido);
 
-
-
-
-
-
 var a = 1;
 const b = 1;
-
-// Iqual
+// Iqualdade valores
+/*
+if (a == b) {
+  console.log("Verdeiro .");
+} else {
+  console.log("Falso .");
+}
+*/
+// Iqualdade até o tipo 
 if (a === b) {
   console.log("Verdeiro .");
 } else {
@@ -67,8 +70,13 @@ if (a === b) {
 
 const n1 = 30;
 const n2 = 30;
-
-// Diferente
+// Diferente valores
+/*if (n1 != n2) {
+  console.log("Verdadeiro");
+} else {
+  console.log("Falso");
+} */
+// Diferente até o tipo
 if (n1 != n2) {
   console.log("Verdadeiro");
 } else {
@@ -121,7 +129,62 @@ if (n1 => n2) {
   console.log("Falso");
 }
 
+//   ###Aula 3
+let c1 = 3;
+if (c1 % 2 == 0) {
+  console.log("O número :" + c1 + " é par !");
+} else {
+  console.log("O número :" + c1 + " é impar !");
+}
+//  Operadores logísticos
+// AND OR NOT
+
+const a1 = 2;
+const b1 = 2;
+
+// a1 iqual b1 e 3 menor que 5
+if ((a1 == b1) && (3 < 5)) {
+  console.log("Verdadeiro");
+} else {
+  console.log("Falso");
+}
+
+// a1 iqual b1 ou 3 menor que 5
+if ((a1 == b1) || (3 < 5)) {
+  console.log("Verdadeiro");
+} else {
+  console.log("Falso");
+}
+
+// a1 iqual b1 ou 3 menor que 5
+if ((a1 == b1) || (3 < 5)) {
+  console.log("Verdadeiro");
+} else {
+  console.log("Falso");
+}
+
+const x = 3;
+// a1 iqual b1 ou x Não é iqual 30
+if ((a1 == b1) && !(x == 30)) {
+  console.log("Verdadeiro");
+} else {
+  console.log("Falso");
+}
 
 
+let carro = "Marea";
+let motorista ="Junior";
 
+if ((carro == "Marea") && (motorista == "Junior")) {
+  console.log(" Condição 1 ");
+  console.log(motorista + " tem um " + carro);
+}
+else if ((carro == "Marea") || (motorista == "Junior")) {
+  console.log(" Condição 2 ");
+  console.log(motorista + " tem um " + carro);
+}
+else {
+  console.log(" Condição 3 ");
+  console.log(motorista +" só anda a pé ");
+}
 
