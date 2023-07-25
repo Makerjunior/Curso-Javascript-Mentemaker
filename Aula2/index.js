@@ -188,3 +188,13 @@ else {
   console.log(motorista +" só anda a pé ");
 }
 
+// Laços de repetição 
+/*
+for(início; condição de parada; passo){
+  // comandos repetidos 
+}
+*/
+
+for(a= 0; a < 5; a = a+1){
+  console.log(a);
+}
