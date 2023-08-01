@@ -108,3 +108,4 @@ switch (diaDaSemana) {
     console.log("Dia inválido");
 }
 
+
