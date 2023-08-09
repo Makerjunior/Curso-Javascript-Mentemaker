@@ -1,4 +1,4 @@
-Claro! Aqui estão alguns exemplos de como usar `while` e `do while` com arrays e objetos em JavaScript:
+ Aqui estão alguns exemplos de como usar `while` e `do while` com arrays e objetos em JavaScript:
 
 **While com arrays:**
 

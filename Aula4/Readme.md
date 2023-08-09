@@ -1,4 +1,4 @@
-Claro, aqui estão alguns exemplos de como usar o `for` em JavaScript:
+Aqui estão alguns exemplos de como usar o `for` em JavaScript:
 
 ### Exemplo 1: For Simples
 Este exemplo mostra como usar um `for` simples para iterar sobre um array de números e imprimir cada um deles no console.

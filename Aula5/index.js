@@ -1,5 +1,5 @@
 
-/*
+
 const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let i = 0;
 
@@ -13,8 +13,7 @@ while (i < numeros.length) {
 
   i++;
 }
-*/
-/*
+
 const numeros2 = [1, 2, 3, 4, 5];
 let y = 9;
 
@@ -22,12 +21,12 @@ do {
   console.log(`O número atual é ${numeros2[y]}`);
   y++;
 } while (y < numeros2.length);
-*/
 
 
 
 
-/*
+
+
 const pessoa = {
     nome: 'João',
     idade: 30,
@@ -42,7 +41,7 @@ while (x < chaves.length) {
     console.log(`A chave "${chave}" tem o valor "${pessoa[chave]}"`);
     x++;
 }
-*/
+
 
 
 const pessoa2 = {
