@@ -1,77 +1,33 @@
-Claro, vou criar uma aula sobre funções em JavaScript. 
 
-# Introdução às Funções em JavaScript
 
-As funções são um dos conceitos fundamentais em JavaScript. Elas permitem que você agrupe um conjunto de instruções para que possam ser executadas várias vezes, sem precisar repetir o código.
+Em JavaScript, os comandos `break` e `continue` são usados em loops `while` para controlar o fluxo do programa.
 
-## Sintaxe básica
+O comando `break` é usado para interromper o loop `while` quando uma determinada condição é atendida. Quando o comando `break` é executado dentro do loop, o loop é interrompido imediatamente e o controle é transferido para a próxima linha de código após o loop.
 
-A sintaxe básica para criar uma função é a seguinte:
+Já o comando `continue` é usado para pular uma iteração do loop quando uma determinada condição é atendida. Quando o comando `continue` é executado dentro do loop, a iteração atual é interrompida e o controle é transferido para a próxima iteração do loop.
+
+Aqui está um exemplo de como esses comandos podem ser usados em um loop `while`:
 
 ```javascript
-function nomeDaFuncao(parametro1, parametro2) {
-  // corpo da função
+let i = 0;
+
+while (i < 10) {
+  i++;
+  
+  if (i === 5) {
+    continue;
+  }
+  
+  if (i === 8) {
+    break;
+  }
+  
+  console.log(i);
 }
 ```
 
-Aqui está um exemplo de função que adiciona dois números:
+Neste exemplo, o loop `while` é executado enquanto `i` for menor que 10. Dentro do loop, verificamos se `i` é igual a 5 usando o comando `continue`. Se for igual a 5, a iteração atual é interrompida e o controle é transferido para a próxima iteração do loop.
 
-```javascript
-function adicionar(a, b) {
-  return a + b;
-}
-```
+Também verificamos se `i` é igual a 8 usando o comando `break`. Se for igual a 8, o loop é interrompido imediatamente e o controle é transferido para a próxima linha de código após o loop.
 
-## Chamando uma função
-
-Para chamar uma função, você simplesmente precisa digitar o nome da função seguido dos parênteses e dos argumentos, se houver:
-
-```javascript
-adicionar(2, 3); // retorna 5
-```
-
-## Retornando valores
-
-As funções podem retornar valores usando a palavra-chave `return`. Aqui está um exemplo:
-
-```javascript
-function multiplicar(a, b) {
-  return a * b;
-}
-
-var resultado = multiplicar(2, 3); // resultado é igual a 6
-```
-
-## Escopo de variáveis
-
-As variáveis declaradas dentro de uma função são chamadas de variáveis locais e só podem ser acessadas dentro da função. As variáveis declaradas fora de uma função são chamadas de variáveis globais e podem ser acessadas de qualquer lugar do seu código.
-
-```javascript
-var global = "variável global";
-
-function exemplo() {
-  var local = "variável local";
-  console.log(local); // imprime "variável local"
-  console.log(global); // imprime "variável global"
-}
-
-exemplo();
-console.log(local); // erro: local is not defined
-console.log(global); // imprime "variável global"
-```
-
-## Funções anônimas
-
-Funções anônimas são funções sem nome. Elas são úteis quando você precisa passar uma função como argumento para outra função.
-
-```javascript
-var adicionar = function(a, b) {
-  return a + b;
-};
-
-var resultado = adicionar(2, 3); // resultado é igual a 5
-```
-
-## Conclusão
-
-As funções são uma parte fundamental do JavaScript e permitem que você escreva código mais limpo e organizado. Espero que esta aula tenha sido útil para você entender melhor como as funções funcionam em JavaScript.
+Espero que isso ajude!
