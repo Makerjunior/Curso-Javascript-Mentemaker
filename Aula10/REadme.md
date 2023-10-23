@@ -1,4 +1,4 @@
-Claro, aqui está o tutorial com "carro" em vez de "pessoa":
+
 
 ## 1. Criando Objetos Carro:
 
