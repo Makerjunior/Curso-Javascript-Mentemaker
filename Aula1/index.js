@@ -22,3 +22,9 @@ if (idade == 18) { // Verifica se a idade é maior ou igual a 18
 } else {
     console.log("Você é menor de idade."); // Imprime uma mensagem caso seja falso
 }
+
+
+
+
+
+
