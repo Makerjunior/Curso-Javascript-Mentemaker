@@ -1,11 +1,19 @@
-const elements = [...document.getElementsByTagName("h1")]
+const elements = [...document.getElementsByTagName("h1")];
+
 elements.map((e)=>{
-    console.log(e.textContent)
+   if (e.innerText == "Mente maker 0") {
+      e.style.color="#f00";
+   }
 })
 
-const elemento = elements.filter((e) => {
-    return e.innerText == "Mente maker 0";
-  });
-  
-  elemento[0].innerHTML="tudo certo"
+const elemento = elements.filter((e)=>{
+  return e.innerText == "Mente maker 3";
+})
 
+elemento[0].innerHTML="Junior";
+
+console.log(elemento)
+
+
+
+//console.log(elements);
