@@ -1,24 +1,18 @@
-// Seleciona o contêiner onde os novos elementos serão adicionados
-const container = document.getElementById('container');
 
-// Cria um novo elemento <p>
-const paragrafo = document.createElement('h1');
 
-// Define o conteúdo do parágrafo
-paragrafo.textContent = 'Este é um novo parágrafo criado com JavaScript!';
 
-// Adiciona o novo parágrafo ao contêiner
-container.appendChild(paragrafo);
+function criarPagrafo(tag,texto,IdContainer) {
+    const container= document.getElementById(IdContainer);
+    const elemento = document.createElement(tag);
+    elemento.textContent=texto;
+    container.appendChild(elemento)
+} 
 
-// Fucnção que cria um paragrafo
-function criarParagrafo(tag, texto, container) {
-    const T = document.createElement(tag);
-    T.textContent = texto; 
-    container.appendChild(T);
-    }
-    criarParagrafo('h1', 'Teste de Div', container);
 
-for (let index = 0; index < 5 ; index++) {
-    
-    criarParagrafo('h1', 'Teste de Div', container);
-}
+
+
+criarPagrafo('h1',"Titulo",'container');
+criarPagrafo('p',"Mente Maker",'box');
+criarPagrafo('p',"Outro texto ",'box');
+criarPagrafo('p',"Outro texto ",'box')
+
