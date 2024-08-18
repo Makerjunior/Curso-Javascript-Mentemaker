@@ -1,34 +1,29 @@
-// Adiciona um event listener para o evento de clique em um botão com id "myButton"
+
 /*
-document.getElementById("myButton").addEventListener("click", function() {
-    document.getElementById("myPara").textContent = "Novo texto";
+document.getElementById("myButton").addEventListener("click",function () {
+    document.getElementById("myPara").textContent="Mente Maker";
 });
 
-
-document.getElementById("myButton").addEventListener("click", function() {
-    document.getElementById("myPara").textContent = "Novo texto";
-});
 */
 
-
-function ocultar(buttonId, elementId) {
+function ocultar(btnId, ElementoId) {
     let estado = 0;
-
-    function ocultar(id) {
+ 
+    function status(Id) {
         estado = !estado;
         if (estado) {
-            document.getElementById(id).style.display = 'none';
-        } else {
-            document.getElementById(id).style.display = 'block';
+            document.getElementById(Id).style.display='none';
+        }else{
+            document.getElementById(Id).style.display='block';
         }
         console.log(estado);
+        
     }
 
-    // Adicionando um event listener para o evento de clique no botão
-    document.getElementById(buttonId).addEventListener("click", function () {
-        ocultar(elementId);
-    });
+    document.getElementById(btnId).addEventListener("click",function() {
+        status(ElementoId)
+    })
+
 }
 
-ocultar("myButton", "myPara")
-
+ocultar("myButton","txt")
