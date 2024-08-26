@@ -3,24 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Evento Mouseover</title>
+    <style>
+      .box {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background-color: #00f; /* Alterei para um tom de azul mais claro */
+            transition: background-color 0.3s ease;
+        }
+    </style>
 </head>
 <body>
+    <div id="box" class="box"></div>
 
-    <div>
-
-        <button id="meuBotao">Clique aqui!</button>
-        <div id="meuElemento" style="width: 200px; height: 200px; background-color: lightblue;"></div>
-        
-        <input id="meuInput" type="text" placeholder="Pressione uma tecla...">
-        <div id="resultado"></div>
-        <p>Este é um parágrafo.</p>
-    </div>
-
-
-  
-</div>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
