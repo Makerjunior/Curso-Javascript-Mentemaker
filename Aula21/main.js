@@ -1,13 +1,13 @@
 
-const lampada = document.getElementById('lampada');
-const input = document.getElementById('meuInput');
+let lampada = document.getElementById('lampada');
+let input = document.getElementById('meuInput');
 
-
-input.addEventListener('keydown', function(event) {
-    console.log(event.key)
-    if (event.key === 'A' || event.key === 'a') {
+input.addEventListener('keydown',function (event) {
+    console.log(event);
+    if (event.key === 'A' || event.key ==='a') {
         lampada.classList.add('acesa');
-    } else if (event.key === 'P' || event.key === 'p') {
+    }else if( event.key === 'B' || event.key === 'b'){
         lampada.classList.remove('acesa');
     }
-});
+    
+})
