@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Lâmpada com Teclado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .lampada {
+            width: 100px;
+            height: 150px;
+            margin: 20px auto;
+            position: relative;
+        }
+        .lampada .corpo {
+            width: 100%;
+            height: 110px;
+            background-color: #666;
+            border-radius: 50% 50% 0 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .lampada .bulbo {
+            width: 90px;
+            height: 90px;
+            background-color: #ddd;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .lampada.acesa .bulbo {
+            background-color: #ffcc00;
+        }
+        .lampada.acesa .corpo {
+            background-color: #444;
+        }
+        .input-container {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle de Lâmpada com Teclado</h1>
+    
+    <p>Pressione as teclas <strong>"A"</strong> para acender a lâmpada e <strong>"P"</strong> para apagá-la.</p>
+    
+    <div class="lampada" id="lampada">
+        <div class="corpo"></div>
+        <div class="bulbo"></div>
+    </div>
+
+    <div class="input-container">
+        <p>Digite algo no campo de texto abaixo e observe o estado da lâmpada.</p>
+        <input type="text" id="meuInput" placeholder="Digite aqui..." />
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
